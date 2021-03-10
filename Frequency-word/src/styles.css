@@ -84,17 +84,14 @@
     color: var(--color-accent);
   }
   
-  #div-table {
-    
-  }
-  
+
   table {
     border-collapse: collapse;
     margin: 0.75rem 0;
   }
   td {
     word-break: break-all;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid var(--color-dark);
   }
   tr:nth-child(even) {
@@ -112,5 +109,29 @@
   }
   td:nth-child(3) {
     width: 100%;
+  }
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 8px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card.highlight-card {
+    background-color: #bf6198;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
   }
   
